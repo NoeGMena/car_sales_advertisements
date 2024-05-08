@@ -12,7 +12,7 @@ if hist_button:
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
 
     #Creación del histograma
-    fig = px.historgam(car_data, x="odometer")
+    fig = px.histogram(car_data, x="odometer")
 
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
