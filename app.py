@@ -23,6 +23,6 @@ build_histogram = st.checkbox('Construir un histograma')
 
 if build_histogram: # si la casilla de verificación está seleccionada
     st.write('Construir un histograma para la columna odómetro')
-    fig_check=px.historgam(car_data, x="odometer")
+    fig_check=px.histogram(car_data, x="odometer")
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
